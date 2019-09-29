@@ -1,0 +1,28 @@
+body {
+    padding: 20px;
+    font-family: Helvetica;
+  }
+  
+  div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 10px;
+  }
+  
+  span {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 0px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    width: 100%;
+    text-align: center;
+    background-color:#F1CAA9;
+
+  }
+
+  hr{
+      color: grey;
+  }
+  

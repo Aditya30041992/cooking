@@ -1,0 +1,20 @@
+<div>
+    <div class="top">
+        <iframe width="80%" height="400" [src]="video.url | secure"></iframe>
+    </div>
+    <form>
+        <div *ngIf="editTitle">
+            <input type="input" name="title" required placeholder="title" [(ngModel)]="video.title">
+        </div>
+        <h2>Title :-</h2>
+        <h4 *ngIf="!editTitle" (click)="onTitleClick()">{{video.title}}</h4>
+        <div>
+            <h2>Link :-</h2>
+            <h4 type="text" name="title" required placeholder="url" [(ngModel)]="video.url">{{video.url}}</h4>
+        </div>
+        <div>
+            <h2>Description :-</h2>
+            <h4 rows="5" name="desc" [(ngModel)]="video.description">{{video.description}}</h4>
+        </div>
+    </form>
+</div>
